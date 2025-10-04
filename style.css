@@ -1,0 +1,197 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+
+  background: linear-gradient(to right, #6a11cb, #b811e2, rgb(214, 85, 85));
+
+}
+
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: -30%;
+
+  h1 {
+    font-size: xx-large;
+  }
+
+
+
+}
+
+
+.box {
+  height: 100px;
+  width: 100px;
+  border: 3px solid black;
+  margin: 20px;
+
+
+  animation: zoomInOut 5s ease-in-out, rotate 2s, shake 0.5s, colorChange 3s infinite alternate;
+
+  box-shadow: 0 4px 16px black;
+  background: aquamarine;
+
+}
+
+
+
+#varg {
+  border-radius: 50% 10% 50% 10%;
+}
+
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* zoom in */
+  }
+
+  100% {
+    transform: scale(1);
+    /* zoom out */
+  }
+}
+
+#varg1 {
+  margin-left: -4px;
+  border-radius: 50% 10% 50% 10%;
+}
+
+
+@keyframes rotate {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes colorChange {
+  0% {
+    background-color: red;
+  }
+
+  25% {
+    background-color: orange;
+  }
+
+  50% {
+    background-color: yellow;
+  }
+
+  75% {
+    background-color: rgb(19, 241, 19);
+  }
+
+  100% {
+    background-color: blue;
+  }
+}
+
+
+
+#varg2 {
+  border-radius: 50% 10% 50% 10%;
+
+}
+
+.shape {
+  display: flex;
+  margin: 450px auto;
+
+  width: fit-content;
+  border-radius: 16px;
+  padding: 20px 40px;
+
+  box-shadow: 0 4px 16px blue;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  text-decoration: none;
+  gap: 30px;
+  text-decoration: none;
+  background: white;
+}
+
+
+.shape a {
+  display: flex;
+  padding: 20px 20px;
+  background: blueviolet;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 16px red;
+  color: red;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri,
+    'Trebuchet MS', sans-serif;
+  margin-top: 20px;
+}
+
+.net {
+  font-family: 'Trebuchet MS',
+    'Lucida Sans Unicode', 'Lucida Grande', 
+    'Lucida Sans', Arial, sans-serif;
+    color: liner-gradient(red, blue);
+     animation: textColorChange 3s infinite alternate;
+}
+
+@keyframes textColorChange {
+  0%   { color: red; }
+  25%  { color: orange; }
+  50%  { color: yellow; }
+  75%  { color: green; }
+  100% { color: blue; }
+
+
+  
+}
